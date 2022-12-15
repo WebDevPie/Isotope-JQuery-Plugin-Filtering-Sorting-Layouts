@@ -1,0 +1,93 @@
+body {
+    background: #222;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #222;
+}
+
+.button-group-wrap {margin: auto;padding: 15px;}
+
+.button-group-wrap h3 {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 5px 5px;
+}
+
+.button-group-wrap .button-group {display: inline-block;}
+
+.filter-button-group {margin-bottom: 20px;}
+
+.button-group button {
+    min-width: 50px;
+    background: #eee;
+    color: #222;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: -1.75px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+
+.button-group button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.button-group button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.box-item {
+    width: calc(33.3% - 30px);
+    height: 90px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff;
+    margin: 15px;
+    padding: 40px 0;
+    /* transition: all 0.2s ease-out; */
+}
+
+.box-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.item-category {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+.box-item.programming .item-category {
+    background: aquamarine;
+}
+.box-item.cms .item-category {
+    background: #01a6ff;
+    color: #fff;
+}
+.box-item.markup .item-category {
+    background: #f08080;
+    color: #fff;
+}
+.item-id {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 35px;
+    margin: 0;
+    background: #7b68ee;
+    color: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 5px #7b68ee;
+}

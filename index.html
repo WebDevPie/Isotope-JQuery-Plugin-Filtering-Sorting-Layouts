@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isotope | Filter & Sort Layouts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="button-group-wrap">
+        <h3>Filter</h3>
+        <div id="filters" class="button-group filter-button-group">
+            <button data-filter="*">show all</button>
+            <button data-filter=".cms">cms</button>
+            <button data-filter=".markup">markup</button>
+            <button data-filter=".programming">programming</button>
+        </div><br>
+        <h3>Sort</h3>
+        <div id="sorts" class="button-group sort-by-button-group">
+            <button data-sort-by="original-order">original order</button>
+            <button data-sort-by="number">id</button>
+            <button data-sort-by="name">name</button>
+            <button data-sort-by="category">category</button>
+        </div>
+    </div>
+
+    <div class="box-listing">
+        <div class="box-item programming" data-category="programming">
+            <h3 class="item-name">JavaScript</h3>
+            <h3 class="item-id">12</h3>
+            <div class="item-category">Programming</div>
+        </div>
+        <div class="box-item markup" data-category="markup">
+            <h3 class="item-name">HTML</h3>
+            <h3 class="item-id">9</h3>
+            <div class="item-category">Markup</div>
+        </div>
+        <div class="box-item cms" data-category="cms">
+            <h3 class="item-name">HubSpot</h3>
+            <h3 class="item-id">4</h3>
+            <div class="item-category">CMS</div>
+        </div>
+        <div class="box-item programming" data-category="programming">
+            <h3 class="item-name">Java</h3>
+            <h3 class="item-id">25</h3>
+            <div class="item-category">Programming</div>
+        </div>
+        <div class="box-item cms" data-category="cms">
+            <h3 class="item-name">WordPress</h3>
+            <h3 class="item-id">10</h3>
+            <div class="item-category">CMS</div>
+        </div>
+        <div class="box-item markup" data-category="markup">
+            <h3 class="item-name">XML</h3>
+            <h3 class="item-id">58</h3>
+            <div class="item-category">Markup</div>
+        </div>
+        <div class="box-item cms" data-category="cms">
+            <h3 class="item-name">Drupal</h3>
+            <h3 class="item-id">2</h3>
+            <div class="item-category">CMS</div>
+        </div>
+        <div class="box-item programming" data-category="programming">
+            <h3 class="item-name">C++</h3>
+            <h3 class="item-id">42</h3>
+            <div class="item-category">Programming</div>
+        </div>
+        <div class="box-item markup" data-category="markup">
+            <h3 class="item-name">HubL</h3>
+            <h3 class="item-id">17</h3>
+            <div class="item-category">Markup</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
